@@ -3,6 +3,8 @@ import { SITE_URL } from "./data/site";
 import { BLOG_POSTS } from "./data/blogPosts";
 import { getSashikoProductSlugs } from "./data/sashikoProducts";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const blogPosts = BLOG_POSTS.map((post) => ({
     url: `${SITE_URL}/stories/${post.slug}`,

@@ -4,6 +4,9 @@ const nextConfig: NextConfig = {
   // Serve on cosmo-us.lecien.com
   // No external image domains needed — all images are in /public
 
+  // Static export to out/ for S3, Firebase Hosting, or any static host
+  output: "export",
+
   // Ensure trailing-slash consistency
   trailingSlash: false,
 
@@ -12,6 +15,8 @@ const nextConfig: NextConfig = {
 
   // Higher-quality image optimization (default is 75)
   images: {
+    // Static hosts cannot serve the /_next/image optimizer
+    unoptimized: true,
     qualities: [75, 90],
     formats: ["image/avif", "image/webp"],
   },
