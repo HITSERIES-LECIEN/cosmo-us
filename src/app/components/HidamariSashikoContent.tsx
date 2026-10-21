@@ -4,7 +4,8 @@ import HidamariColorLineup from "./HidamariColorLineup";
 import ProductStoryLink from "./ProductStoryLink";
 import { SASHIKO_PRODUCTS } from "../data/sashikoProducts";
 
-const SASHIKO_CATALOGUE_PDF = "/pdfs/sashiko-catalogue-20260714.pdf";
+const SASHIKO_CATALOGUE_PDF =
+  "/pdfs/cosmo-2026-sashiko-catalog-extract-20261021.pdf";
 
 const GALLERY = [
   {
