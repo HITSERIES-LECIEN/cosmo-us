@@ -4556,6 +4556,7 @@ export const BLOG_POSTS: BlogPost[] = [
           caption: "Iridescent Nishikiito accents in a butterfly embroidery by Miyata-sensei.",
           width: 810,
           height: 1080,
+          fit: "contain",
         },
       },
     ],
