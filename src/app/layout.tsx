@@ -176,7 +176,7 @@ export default function RootLayout({
                     <li><Link href="/wholesale">Wholesale</Link></li>
                     <li>
                       <a
-                        href="/pdfs/cosmo-2026-product-catalog-20261021.pdf"
+                        href="/pdfs/cosmo-2026-product-catalog.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                       >

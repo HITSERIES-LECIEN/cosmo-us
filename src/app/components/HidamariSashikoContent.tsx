@@ -5,7 +5,7 @@ import ProductStoryLink from "./ProductStoryLink";
 import { SASHIKO_PRODUCTS } from "../data/sashikoProducts";
 
 const SASHIKO_CATALOGUE_PDF =
-  "/pdfs/cosmo-2026-sashiko-catalog-extract-20261021.pdf";
+  "/pdfs/cosmo-2026-sashiko-catalog-extract.pdf";
 
 const GALLERY = [
   {
