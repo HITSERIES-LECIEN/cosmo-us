@@ -1,10 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Serve on cosmo-us.lecien.com
-  // No external image domains needed — all images are in /public
-
-  // Static export to out/ for S3, Firebase Hosting, or any static host
+  // Static files for Firebase Hosting site `cosmo-us` (project lecien-dev).
   output: "export",
 
   // Ensure trailing-slash consistency
@@ -13,42 +10,11 @@ const nextConfig: NextConfig = {
   // Enable strict mode for React
   reactStrictMode: true,
 
-  // Higher-quality image optimization (default is 75)
+  // Hosting serves files as-is; there is no Next.js image optimizer.
   images: {
-    // Static hosts cannot serve the /_next/image optimizer
     unoptimized: true,
     qualities: [75, 90],
     formats: ["image/avif", "image/webp"],
-  },
-
-  async redirects() {
-    return [
-      {
-        source: "/blog",
-        destination: "/stories",
-        permanent: true,
-      },
-      {
-        source: "/blog/:slug",
-        destination: "/stories/:slug",
-        permanent: true,
-      },
-      {
-        source: "/faire",
-        destination: "/wholesale",
-        permanent: true,
-      },
-      {
-        source: "/floss/hidamari",
-        destination: "/sashiko",
-        permanent: true,
-      },
-      {
-        source: "/cloth",
-        destination: "/fabric",
-        permanent: true,
-      },
-    ];
   },
 };
 
