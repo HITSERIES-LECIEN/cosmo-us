@@ -174,6 +174,15 @@ export default function RootLayout({
                       </li>
                     ))}
                     <li><Link href="/wholesale">Wholesale</Link></li>
+                    <li>
+                      <a
+                        href="/pdfs/cosmo-2026-product-catalogue-20261021.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        2026 Catalog
+                      </a>
+                    </li>
                   </ul>
                 </div>
                 <div className="footer-col">
